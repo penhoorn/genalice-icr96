@@ -12,13 +12,17 @@ The command line tool to create a GRF is called `gaReference` and it requires an
             --input=reference.fa \
             --output=reference.grf \
             --alt_file=reference.alt
+            
 ### Example command GRI file
 The `gaIndex` tool creates a comprehensive reference index for read alignment. It requires an input GRF and output GRI file.
 
     gaIndex \
             --input=reference.grf \
             --output=reference.gri
-            
+
+### Script
+We used a [shell script](scripts/reference.sh) to automate GRF and GRI construction for the two human reference assemblies.
+
 ## Genalice Map
 ...
 
