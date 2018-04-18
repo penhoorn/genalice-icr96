@@ -5,9 +5,9 @@
 #------------------------------------------------------------------------------
 # reference assemblies
 ref37=references/GRCh37.p13.genome.fa
-alt37=references/GRCh37.p13.genome.ann.txt
+alt37=references/GRCh37.p13.genome.alt
 ref38=references/GCA_000001405.15_GRCh38_full_plus_hs38d1_analysis_set.fa
-alt38=references/GCA_000001405.15_GRCh38_full_plus_hs38d1_analysis_set.ann.txt
+alt38=references/GCA_000001405.15_GRCh38_full_plus_hs38d1_analysis_set.alt
 
 #------------------------------------------------------------------------------
 # GRF/GRI files
