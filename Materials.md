@@ -1,1 +1,16 @@
 # Materials
+
+## NGS data
+...
+
+## Reference sequences
+...
+
+## Genalice version
+...
+
+## Open source tools
+...
+
+# Hardware configuration
+...
