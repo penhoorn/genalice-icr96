@@ -17,7 +17,9 @@ This work has been published as a preprint.
 __Validation of an ultra-fast CNV calling tool for Next Generation Sequencing data using MLPA-verified copy number alterations.__ Bas Tolhuis and Hans Karten, bioRXive. doi:...
 
 # Quick links
-...
+* [Materials](Materials.md)
+
+* [Methods](Methods.md)
 
 # Contact
 ...
