@@ -10,6 +10,8 @@ We aligned reads and called CNVs against two assemblies of the human reference g
 
 * GRCh38: ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/
 
+Both reference sequences contain two types of contigs, namely: primary chromosomes and alternate loci. Genalice Map is an _alternate-loci_ aware read alignment tool. Discrimination between primary chromosomes and alternate loci can be achieved through [`alt files`](references/). The `alt files` are included as annotation, while making a [Genalice Reference File](Methods.md).
+
 ## Genalice version
 ...
 
