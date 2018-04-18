@@ -22,7 +22,7 @@ __Validation of an ultra-fast CNV calling tool for Next Generation Sequencing da
 * [Methods](Methods.md)
 
 # Contact
-...
+You can raise issues on this Github repository or contact us: info@genalice.com.
 
 # History
-...
+    * June 1st, 2018 - Initial release
