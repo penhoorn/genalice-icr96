@@ -12,5 +12,5 @@
 ## Open source tools
 ...
 
-# Hardware configuration
+## Hardware configuration
 ...
