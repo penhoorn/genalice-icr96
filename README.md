@@ -11,8 +11,10 @@ The dataset has been developed by The Institute of Cancer Research and is descri
 ### Genalice
 Genalice solutions process NGS datasets through read alignment and variant calling, while delivering significant speed increases and accuracy improvements. Genalice delivers solutions for various NGS secondary analyses using innovative and patented techonology, which is further described on our website: [genalice.com](http://www.genalice.com).
 
-# Preprint publication
-...
+# Preprint
+This work has been published as a preprint.
+
+__Validation of an ultra-fast CNV calling tool for Next Generation Sequencing data using MLPA-verified copy number alterations.__ Bas Tolhuis and Hans Karten, bioRXive. doi:...
 
 # Quick links
 ...
