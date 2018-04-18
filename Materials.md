@@ -9,6 +9,9 @@
 ## Genalice version
 ...
 
+## Configuration files
+...
+
 ## Open source tools
 ...
 
