@@ -27,5 +27,7 @@ In addition to Genalice solutions, we used the following open source tools:
 
 * [bedtools v2.20.1](http://bedtools.readthedocs.io/en/latest/content/bedtools-suite.html)
 
+* [R version 3.3.2](https://www.r-project.org/)
+
 ## Hardware configuration
 ...
