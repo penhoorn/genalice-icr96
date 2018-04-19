@@ -23,7 +23,9 @@ Each option is described as: `option_name=[value]` in a configuration file. Comm
 The configuration file(s) used in this study can be found [here](configs/).
 
 ## Open source tools
-...
+In addition to Genalice solutions, we used the following open source tools:
+
+* [bedtools v2.20.1](http://bedtools.readthedocs.io/en/latest/content/bedtools-suite.html)
 
 ## Hardware configuration
 ...
