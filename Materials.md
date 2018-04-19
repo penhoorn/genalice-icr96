@@ -13,7 +13,7 @@ We aligned reads and called CNVs against two assemblies of the human reference g
 Both reference sequences contain two types of contigs, namely: primary chromosomes and alternate loci. Genalice Map is an _alternate-loci_ aware read alignment tool. Discrimination between primary chromosomes and alternate loci can be achieved through [`alt files`](references/). The `alt files` are included as annotation, while making a [Genalice Reference File](Methods.md).
 
 ## Genalice version
-...
+Throughout this study we used Genalice version 2.x.x.
 
 ## Configuration files
 Genalice tools are fully configurable to obtain the best possible data results. As a consequence, each tool has a series of options to allow customized settings. Adding multiple options to the command line can be cumbersome. Therefore, multiple option settings can be added as a single configuration file through the `cmd_file` option.
