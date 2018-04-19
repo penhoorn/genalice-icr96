@@ -30,4 +30,14 @@ In addition to Genalice solutions, we used the following open source tools:
 * [R version 3.3.2](https://www.r-project.org/)
 
 ## Hardware configuration
-...
+Throughout this study we used a server with the following hardware configurations:
+
+* Dual Intel(R) Xeon(R) E5 620 V2 (2100-2600 MHz) CPU with a total of 12 cores and 24 threads
+
+* 128GB Memory (8x16GB, 1333 Mhz)
+
+* Infiniband adapter of 20 Gigabit/second
+
+* Raid 5 disk with 1 Gigabyte/second streaming speed
+
+* Operating system is SuSE Linux Enterprise server 12 on standard server board
