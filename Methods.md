@@ -31,8 +31,10 @@ The [control-group.sh](scripts/control-group.sh) script automates the production
 ### CNV calling
 Genalice CNV requires a target sample (GAR format) and control group (GCO format) to call copy number alterations in the target relative to the control group. It first calculates coverage ratios for the target sample and control groups for every bucket, separately. Coverage ratios are the bucket coverage divided by the sample/control group average coverage. This normalization procedure allows direct comparison of target and control group. Next, the tool calculates a CNV ratio for every bucket by dividing the target coverage ratio over the control group ratio. The tool calls duplications when the CNV ratio was equal to or higher than 1.25. Likewise, it calls deletions whenever the CNV ratio was equal to or less than 0.75. Any buckets with CNV ratios in between those thresholds are considered to have normal copy numbers. Moreover, the tool calculates a z score for every bucket, which can be used to filter out deletion or duplication calls that deviate to little from the control group. Here, buckets with z scores between -4.7 and 4.7 are considered to have normal copy numbers. 
 
-The exact commands and configurations used in this study can be found in the [cnv.sh](scripts/cnv.sh) script.
+The exact commands and configurations used in this study can be found in the [cnv.sh](scripts/cnv.sh) script. The script uses the `gaStructure cnv` command to call CNVs. In addition, it uses `bedtools intersect` to select all calls that overlap with the TruSight Cancer panel captured regions.
 
+## Compare to MLPA results
+...
 
 ## Gene plots
 ...
