@@ -13,7 +13,7 @@ The read alignment tool is set up for optimal results using the configuration fi
 
 * `input` defines raw sequence reads in FASTQ format as a list in JSON format. Each sample has its own [JSON input file](json) describing the location of (multiple) first and second in pair FASTQ files.
 * `output` defines the output GAR file.
-* `cmd_file` defines the [configuration file](configs/human.map.conf) consisting of alignemnt parameters.
+* `cmd_file` defines the [configuration file](configs/human.map.conf) consisting of alignment parameters.
 * `alt_score_bias=0.9` defines a mapping bias in favor of the primary sequence relative to the alternative contigs. An `alt_score_bias` larger than 1 indicates a bias in favor of the alternative contigs, while a score of 1 indicates no bias. The bias results in a preferable mapping location when a read is equally likely to align to a primary sequence or alternative contig.
 * `capture_bed_file` defines the captured regions of a targeted NGS assay in BED format. These regions are used to accurately calculate coverage depth over the captured regions, which is essential for copy number detection. 
 
