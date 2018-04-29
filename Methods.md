@@ -27,7 +27,10 @@ The control group is summarized in a Genalice Coverage (GCO) file, containing av
 A GCO file requires GAR files from the control samples as input. In this study, the control samples differ per target sample. First, control and target samples all come from the same library enrichment pool. The ICR96 Exon CNV Validation series is somewhat unusual in its composition, because it has a relatively high number of specific CNVs in a small number of samples. Such composition is highly unlikely in clinical testing (Fowler et al 2016). Furthermore, it may skew averages and standard deviations in the GCO file.  Therefore, we attempted to select MLPA-normal controls for every sample with an MLPA-positive CNV. In addition, we excluded the target sample from the control group. A full list of control group samples can be found [here](controls).
 
 ### CNV calling
-...
+Genalice CNV requires a target sample (GAR format) and control group (GCO format) to call copy number alterations in the target relative to the control group. It first calculates coverage ratios for the target sample and control groups for every bucket, separately. Coverage ratios are the bucket coverage divided by the sample/control group average coverage. This normalization procedure allows direct comparison of target and control group. Next, the tool calculates a CNV ratio for every bucket by dividing the target coverage ratio over the control group ratio. The tool calls duplications when the CNV ratio was equal to or higher than 1.25. Likewise, it calls deletions whenever the CNV ratio was equal to or less than 0.75. Any buckets with CNV ratios in between those thresholds are considered to have normal copy numbers. Moreover, the tool calculates a z score for every bucket, which can be used to filter out deletion or duplication calls that deviate to little from the control group. Here, buckets with z scores between -4.7 and 4.7 are considered to have normal copy numbers. 
+
+The exact commands and configurations used in this study can be found on our __github page__.
+
 
 ## Gene plots
 ...
