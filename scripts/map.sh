@@ -13,8 +13,11 @@ do
         # select fasta and alt_file
         grf=references/$assembly.grf
         gri=references/$assembly.gri
+        
+        # bed file describing captured regions of TruSight Cancer panel
+        bed_file=bed/$assembly/capture.bed
 
-        # start server
+        # start named server
         gaServer \
                 --server_name=$assembly \
                 --index=$gri \
@@ -28,19 +31,20 @@ do
                 # sample name
                 sample=`basename $myJson .json`
                 
-                # read mapping per sample
+                # client: alignment job per sample
                 gaMap \
                         --server_name=$assembly \
                         --input=json/$myJson \
                         --output=gar_files/$assembly/$sample.gar \
-                        --cmd_file=configs/human.map.conf \
+                        --cmd_file=configs/human.map.exome.conf \
                         --alt_score_bias=0.9 \
+                        --capture_bed_file=$bed \
                         --report_file=log/$sample.mapping.trc \
                         --error_file=log/$sample.mapping.err
                         
         done
         
-        # stop server
+        # stop named server
         gaMap --server_name=$assembly --stop_server
                 
 done
