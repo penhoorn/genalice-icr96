@@ -9,7 +9,7 @@ assembly=GRCh37.p13.genome
 bed_file=bed/685e972e-7457-4dbf-8a33-3b91ae4a8f29.bed
 
 # all gco lists
-list=`ls controls/*.list`
+list=`ls lists/*.list`
 
 # loop over every list
 for gco_list in ${list[@]}
