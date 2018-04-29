@@ -18,7 +18,7 @@ do
         target=`basename $gco_list .list`
 
         # output files
-        gco_file=controls$target.gco
+        gco_file=controls/target.gco
         gar_file=gar_files/$assembly/$target.gar
         cnv_file=cnv_files/$assembly/$target.svn3407-filter_z${zscore}.cnv
         cap_file=cnv_files/$assembly/$target.svn3407-filter_z${zscore}.captured.cnv
