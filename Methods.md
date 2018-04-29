@@ -7,7 +7,9 @@ We used a [shell script](scripts/reference.sh) to automate GRF and GRI construct
 
 
 ## Genalice Map
-...
+Genalice Map aligns short sequence reads to the reference index (GRI) with a patented high performance mapping algorithm (REF). First, the GRI is loaded into memory (RAM) and subsequently raw sequence reads of a single sample are matched to the index in memory.  After all sequence reads have been processed the alignment result is written to disk in the GAR file format. This mapping procedure repeats itself for every sample of the ICR96 dataset, while the GRI remains in memory. 
+
+The read alignment tool is set up for optimal results using the configuration files described in the [Materials](Materials.md) section. The exact commands and configurations used in this study can be found [here](scripts/map.sh).
 
 ## Genalice CNV
 ...
