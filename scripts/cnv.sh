@@ -16,8 +16,6 @@ for gco_list in ${list[@]}
 do
         # target name
         target=`basename $gco_list .list`
-        echo "#------------------------------------------------------------------------------"
-        echo "Target: $target"
 
         # output files
         gco_file=controls$target.gco
